@@ -1,9 +1,8 @@
-
-div {
-    background-color:#CCD1D1;
-}
 h1 {
     color: #A9CCE3;
+}
+h2 {
+    color: #D1F2EB
 }
 p {
     color: #FADBD8;
@@ -17,3 +16,4 @@ il {
 body {
     background-image: url("https://cdn.dribbble.com/users/597165/screenshots/2477536/diamond.gif");
 }
+
