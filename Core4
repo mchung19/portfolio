@@ -21,13 +21,16 @@
     <h2> Conditionals </h2>
     <p> Technical definition:conditional expressions and conditional constructs are features of a programming language, which perform 
     different computations or actions depending on whether a programmer-specified boolean condition evaluates to true or false.</p>
-    <p> Real life example:</p>
+    <p> Real life example: If you go on the 405, then you will hit traffic. Else, if you take the 10, then there won't be as much traffic. </p>
     <p> Screenshot from scratch:</p>
+    <img src="Conditional scratch.jpg" alt="Scratch Conditional Example" width:"600" height:"400">
     <p> Example code from python:</p>
         <br>
      
     <h3> Variable </h3>
-    <p> Technical definition:</p>
+    <p> Technical definition: a variable or scalar is a storage location paired with an associated symbolic name (an identifier), which 
+    contains some known or unknown quantity of information referred to as a value. ... Compilers have to replace variables' symbolic 
+    names with the actual locations of the data.</p>
     <p> Real life example:</p>
     <p> Screenshot from scratch:</p>
     <p> Example code from python:</p>
