@@ -1,9 +1,109 @@
- <!DOCTYPE html>
+ <!-- <!DOCTYPE html>
 <html lang="en-US">
   <head>
       <link type="text/css" href="style.css" rel="stylesheet"
   </head>
-  <body>
+  <body> -->
+   
+   <!DOCTYPE html>
+<html>
+<head>
+   <link type="text/css" href="style.css" rel="stylesheet"
+         </head>
+<style>
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd; 
+}
+
+div.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+}
+</style>
+</head>
+<body>
+
+<h2>Accordion</h2>
+
+<button class="accordion">June 27, 2017</button>
+<div class="panel">
+  <p>Today, I learned how to make shapes on Python. We learned about Python and the similiarties and differences between Python and Scratch. Scratch is made to be easy for beginners as it gives you sprites and all of the commands are in blocks, instead of making the user type everything out. Scratch was definately very helpful to start out with because I got to build off of what I learned and apply it to Python. In Python,the user does have to type out the commands and I found this a little bit more difficult to get things in order by indentation. I am still trying to figure out in my code on how to make something occur after every time in the "while true" aka "forever loop. However, they do have similar functions and it made my experience with Python very helpful. I am still trying to debug my code so that the shape making continues forever in different locations.</p>
+</div>
+
+<button class="accordion">June 30, 2017</button>
+<div class="panel">
+  <p>Lists work similary to strings and use [] to store the data with the first element starting at 0 then goes up. There are different python functions that go with lists. For example, there are append put bracket and adds to the list as one new variable. There is extend and you put it in brackets and the variables go into the list. Tuples are like a list but you can't change it so you can't append or extend.
+Searching lists/ list.index('blah')tell you where something is in the list.
+To find where something is in a list, use print(five_syllable.index('There was a kitty')) --> it'll print the number. 
+</p>
+</div>
+
+<button class="accordion">July 5, 2017</button>
+<div class="panel">
+  <p> Today we learned about robots and what defines a robot. We decided that a robot would: 
+  <ul>
+    <li> have sensors </li>
+    <li> source of energy </li> </ul>
+  <p>After a long weekend, we started making a circuit using Arduino. We lit up a LED using resistors, a breadboard, a Shield, jumper cables, and LEDs. 
+    We also lit it up through series and parallel circuit and using a button to stop or start the flow of currents. We also used a piezo which would 
+    vibrate and create a buzzing noise. Here's an example of the parallel which used two resistors and two LEDs. My group worked very well together
+   and we were worked very efficently.</p>
+  <img src = "circuit.jpg" alt= "Parallel Circuit" width: "500" height:"500"></p>
+</div>
+
+<button class="accordion">July 6, 2017</button>
+<div class="panel">
+  <p>  Today, we learned how to code a blinking LED light by using the breadboard on the Shield. We connected it to the computer in order to power the 
+    Arduino. Afterwards, we programmed five different LEDs to make a little lightshow. Since we were finished with the project, we decided to
+    assemble part of the kit. After looking up a servos code, we programmed the servos so the wheels would "pulse" little by little. We also learned about
+   Ayanna Howard, who is a a roboticist who worked at the Jet Proplsion Laboratory (JPL). Manuela Veluso is another woman eingineer who works at
+   he Herbert A. Simon University as a professor. She was the president of AAAI until 2014 and the co-founder of RoboCup Federation. Both women made a
+   huge influence on robotics and continues till today.</p> </div>
+   
+<button class="accordion">July 10, 2017</button>
+<div class="panel">
+  <p> Today in class, we programmed a robot to dance with Arduino. Using a servo, we picked a song (Wannabe by the Spice Girls) and made the robot "dance."
+    It was difficult because we could not figure out how to make the servo what we want. For example, one wheel would go forward while the other would go backwards.
+    I worked with Ashley and Chloe to solve the problem and since we were ahead, we also programmed three LED lights. My favorite part of the robot's dance was when 
+    it would move side to side because it was the first dance move that we programmed. We had trouble, but we eventually figured it out. Manuela Veloso and Ayanna 
+   Howard would need digital and analog outputs depending on what they need it for.
+</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    }
+}
+</script>
+
+</body>
+</html>
+
  <!-- 
  <h2> June 27,2017</h2>
 
@@ -21,7 +121,7 @@
     python functions that go with lists. For example, there are append put bracket and adds to the list as one new variable. There is extend 
 and you put it in brackets and the variables go into the list. Tuples are like a list but you can't change it so you can't append or extend.
 Searching lists/ list.index('blah')tell you where something is in the list.
-To find where something is in a list, use print(five_syllable.index('There was a kitty')) --> it'll print the number. 
+To find where something is in a list, use print(five_syllable.index('There was a kitty'))  it'll print the number. 
 
     
     #extend put bracket and put variables into the list </p>
