@@ -21,6 +21,11 @@ great {
     right: 55px;
     z-index:1;
 }
+great hr{
+    margin:8px;
+    padding:0px;
+    border-color:black;
+}
 il {
     color:#F1948A;
     font-family: 'Abel', sans-serif;
