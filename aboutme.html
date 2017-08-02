@@ -19,22 +19,26 @@
 <!-- Use any element to open/show the overlay navigation menu -->
 <span onclick="openNav()">open</span>
 
-  <!--End of Nav -->
+  
 
+  <script>
+  /* Open when someone clicks on the span element */
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+  </script>
+  <!--End of Nav -->
   <head>
      <link type="text/css" href="style.css" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
   </head>
   <body>
-  <!--  
-    <table style="width:100%">
-  <tr>
-    <td>Home</td>
-    <td href="http://htmlpreview.github.io/?https://github.com/mchung19/portfolio/blob/gh-pages/Core4">Core 4 </td> 
-    <td>GWC Journal</td>
-  </tr>
- 
-</table> -->
+
 
  <center>
   
